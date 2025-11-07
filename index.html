@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Grid Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Mono:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background from Art Generator */
+        }
+        
+        /* Styles from Card Grid Builder */
+        .grid-cell {
+            font-family: 'Red Hat Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 25px;
+            min-height: 25px;
+            font-size: 1.25rem;
+            transition: background-color 0.1s;
+        }
+        .theme-light {
+            background-color: white;
+            color: #1f2937; /* Dark text */
+        }
+        .theme-dark {
+            background-color: black; /* PURE BLACK */
+            color: white; /* Light text */
+        }
+        .theme-clear {
+            background-color: transparent;
+            color: #1f2937;
+            box-shadow: none;
+        }
+        .theme-light .empty-cell,
+        .theme-clear .empty-cell {
+            color: #9ca3af;
+            opacity: 0.25;
+            font-weight: 300;
+        }
+        .theme-dark .empty-cell {
+            color: #aaaaaa;
+            opacity: 0.25;
+            font-weight: 300;
+        }
+
+        /* Styles from Binary Art Generator */
+        .art-container {
+            font-family: 'Red Hat Mono', monospace;
+            line-height: 0.95;
+            word-break: break-all;
+            white-space: pre-wrap;
+            color: #ffffff;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="text-gray-100">
+    <div id="root"></div>
+</body>
+</html>

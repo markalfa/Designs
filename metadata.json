@@ -1,0 +1,5 @@
+{
+  "name": "Creative Grid Tools",
+  "description": "A versatile web application that combines two powerful tools: a Card Grid Generator for creating custom character-based layouts, and a Continuous Density Binary Art Generator for transforming images into unique character art.",
+  "requestFramePermissions": []
+}
